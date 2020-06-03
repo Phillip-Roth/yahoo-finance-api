@@ -5,23 +5,35 @@ yahoo finance api
 
 ## Stock.java
 
-How To Instantiate:
+This class gets pulls all data related to the stock entered.
 
-Stock name = new Stock( "ticker of stock" );
+### Key Methods
 
-Key Methods:
+**Constructor** 
 
-update() - BY FAR MOST IMPORTANT METHOD!!! Nothing will be correct without this method, this method pulls data from
-		yahoo finance so that the data is correct and up to date.
+The Stock constructor takes one arugument, the ticker of the stock.
 
-getAbv() - will return a string containing the ticker.
-getAsk() - will return a double containing the current ask for the stock.
-getBid() - will return a double containing the current bid for the stock.
-getOpen() - will return a double containing the current open of the stock.
-getDivYield() - will return a double containing the current dividend yield of the stock.
-getPrevClose() - will return a double containing the previous close of the stock.
+Example: a Stock object that represents AT&T
 
-Errors:
+Stock t = new Stock("T");
+
+**Update**
+
+this method pulls data from yahoo finance the first time that it is called it gets all data, and any call after that updates it.
+
+**Getter Methods**
+
+Below are the methods to access data related to the Option and what they return.
+
+
+* getAbv() - returns a string containing the ticker.
+* getAsk() - returns a double containing the current ask for the stock.
+* getBid() - returns a double containing the current bid for the stock.
+* getOpen() - returns a double containing the current open of the stock.
+* getDivYield() - returns a double containing the current dividend yield of the stock.
+* getPrevClose() - returns a double containing the previous close of the stock.
+
+**Errors**
 
 If you ever get an error from the code refering to the website, as long as the ticker is correct this just means that 
 yahoo finance blocked the program from accessing the website for whatever reason. Just run it again and it should be 
