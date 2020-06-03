@@ -1,5 +1,5 @@
 # yahoo-finance-api
-yahoo finance api. This project contains two classes: Stock.java and Option.java, that get data from Yahoo Finance to evaluate different options trading strategies.
+This project contains two classes: Stock.java and Option.java, that get data from Yahoo Finance to evaluate different options trading strategies.
 
 
 
