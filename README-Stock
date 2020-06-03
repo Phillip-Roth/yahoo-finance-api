@@ -1,0 +1,23 @@
+Stock Class:
+
+How To Instantiate:
+
+Stock name = new Stock( "ticker of stock" );
+
+Key Methods:
+
+update() - BY FAR MOST IMPORTANT METHOD!!! Nothing will be correct without this method, this method pulls data from
+		yahoo finance so that the data is correct and up to date.
+
+getAbv() - will return a string containing the ticker.
+getAsk() - will return a double containing the current ask for the stock.
+getBid() - will return a double containing the current bid for the stock.
+getOpen() - will return a double containing the current open of the stock.
+getDivYield() - will return a double containing the current dividend yield of the stock.
+getPrevClose() - will return a double containing the previous close of the stock.
+
+Errors:
+
+If you ever get an error from the code refering to the website, as long as the ticker is correct this just means that 
+yahoo finance blocked the program from accessing the website for whatever reason. Just run it again and it should be 
+fine.
